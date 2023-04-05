@@ -1,7 +1,7 @@
 export default function drawing(drawing) {
   /* START DRAWING HERE */
 
-  drawing.strokeStyle = "red";
+  drawing.strokeStyle = "blue";
   drawing.strokeRect(50, 50, 50, 50);
   
   drawing.strokeStyle = "green";
