@@ -4,7 +4,7 @@ on:
     types: [opened, reopened, ready_for_review]
 jobs:
   automerge:
-    if: "${{ !contains('!noautomerge', github.event.pull_request.body) }}"
+    # if: "${{ !contains('!noautomerge', github.event.pull_request.body) }}"
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
