@@ -14,7 +14,10 @@ jobs:
           node-version: 18
       - run: yarn install && yarn start
         working-directory: ./.github/all-the-code
-      - run: git status
+      - run: |
+          git add ./.github/drawing.png
+          git commit -m "update drawing"
+          git push
       # - run: gh pr merge --squash $PULL_REQUEST
       #   env:
       #     GITHUB_TOKEN: ${{ github.token }}
