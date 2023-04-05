@@ -15,6 +15,7 @@ jobs:
       - run: yarn install && yarn start
         working-directory: ./.github/all-the-code
       - run: |
+          gh auth setup-git
           git add ./.github/drawing.png
           git commit -m "update drawing"
           git push
