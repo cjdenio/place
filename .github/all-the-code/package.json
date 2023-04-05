@@ -1,0 +1,16 @@
+{
+  "name": "all-the-code",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^2.11.2"
+  },
+  "scripts": {
+    "start": "ts --esm index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11"
+  }
+}
