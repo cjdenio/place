@@ -14,8 +14,10 @@ jobs:
           node-version: 18
       - run: yarn install && yarn start
         working-directory: ./.github/all-the-code
+      - run: gh auth setup-git
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - run: |
-          gh auth setup-git
           git add ./.github/drawing.png
           git commit -m "update drawing"
           git push
