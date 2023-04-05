@@ -4,8 +4,8 @@ export default function drawing(drawing) {
   drawing.strokeStyle = "blue";
   drawing.strokeRect(50, 50, 50, 50);
   
-  drawing.strokeStyle = "green";
-  drawing.strokeRect(75, 75, 50, 50);
+  drawing.fillStyle = "green";
+  drawing.fillRect(75, 75, 50, 50);
 
   /* STOP DRAWING HERE */
 }
