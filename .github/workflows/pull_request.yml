@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: gh pr merge ${{ github.event.pull_request.html_url }}
+      - run: gh pr merge --squash $PULL_REQUEST
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          PULL_REQUEST: ${{ github.event.pull_request.html_url }}
 
