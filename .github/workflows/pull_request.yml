@@ -24,7 +24,7 @@ jobs:
           git add ./.github/drawing.png
           git commit -m "update drawing"
           git push
-      - run: gh pr merge --squash $PULL_REQUEST
+      - run: gh pr merge --merge $PULL_REQUEST
         env:
           GITHUB_TOKEN: ${{ github.token }}
           PULL_REQUEST: ${{ github.event.pull_request.html_url }}
