@@ -6,6 +6,8 @@ on:
 jobs:
   yeah:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read|write
     steps:
       - uses: actions/checkout@v3
       - run: gh pr merge --squash $PULL_REQUEST
