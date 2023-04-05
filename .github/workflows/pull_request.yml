@@ -1,8 +1,9 @@
+name: automerge
 on:
   pull_request:
     types: [opened, reopened, ready_for_review]
 jobs:
-  merge:
+  automerge:
     if: "${{ !contains('!noautomerge', github.event.pull_request.body) }}"
     runs-on: ubuntu-latest
     permissions: write-all
