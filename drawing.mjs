@@ -1,11 +1,11 @@
-export default function drawing(drawing) {
+export default (d) => {
   /* START DRAWING HERE */
 
-  drawing.strokeStyle = "blue";
-  drawing.strokeRect(50, 50, 50, 50);
+  d.strokeStyle = "blue";
+  d.strokeRect(50, 50, 50, 50);
   
-  drawing.fillStyle = "red";
-  drawing.fillRect(75, 75, 50, 50);
+  d.fillStyle = "red";
+  d.fillRect(75, 75, 50, 50);
 
   /* STOP DRAWING HERE */
 }
